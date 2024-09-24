@@ -16,7 +16,7 @@ const TrendProperties = () => {
                 <Stack className={"info-box"}>
                     <Box className={"left"}>
                         <span>Trend Properties</span>
-                        <p>Trend is based on likes</p>
+                        <p>Get some inspirations from 1800+ skills</p>
                     </Box>
                     <Box className={"right"}>
                         <div className="pagination-box">

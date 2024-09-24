@@ -15,8 +15,8 @@ const TopPropertyCard = () => {
                 <div>$420000</div>
             </Box>
             <Box className={"info"}>
-                <strong className="title">Run Will Building</strong>
-                <p className="desc">Seoul Gangnam Apartment</p>
+                <strong className="title">Iteawon</strong>
+                <p className="desc">More Halal Foods</p>
                 <div className={"options"}>
                     <div>
                         <img src="/img/icons/bed.svg" alt="" />
@@ -34,7 +34,7 @@ const TopPropertyCard = () => {
 
                 <Divider sx={{ mt: "15px", mb: "17px" }} />
                 <div className={"bott"}>
-                    <p>Rent</p>
+                    <p>Rent/Barter</p>
                     <div className={"view-like-box"}>
                         <IconButton color={"default"}>
                             <RemoveRedEyeIcon />

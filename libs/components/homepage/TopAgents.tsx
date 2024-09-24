@@ -14,7 +14,7 @@ const TopAgents = ({ initialInput, ...props }: any) => {
                 <Stack className={"info-box"}>
                     <Box className={"left"}>
                         <span>Top Agents</span>
-                        <p>Our Top Agents always ready to serve you</p>
+                        <p>These are our best Top Agents</p>
                     </Box>
                     <Box className={"right"}>
                         <div className="more-box">

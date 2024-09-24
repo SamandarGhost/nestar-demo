@@ -20,8 +20,8 @@ const PopularPropertyCard = () => {
                 <div className={"price"}>$880000</div>
             </Box>
             <Box className={"info"}>
-                <strong className="title">Run Will Building</strong>
-                <p className="desc">Seoul Gangnam Apartment</p>
+                <strong className="title">Gangnam Aparment</strong>
+                <p className="desc">Beauty in Seoul</p>
                 <div className={"options"}>
                     <div>
                         <img src="/img/icons/bed.svg" alt="" />

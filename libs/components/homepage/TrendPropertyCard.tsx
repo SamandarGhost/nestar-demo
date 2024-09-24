@@ -15,8 +15,8 @@ const TrendPropertyCard = () => {
                 <div>$750000</div>
             </Box>
             <Box className={"info"}>
-                <strong className="title">Run Will Building</strong>
-                <p className="desc">Seoul Gangnam Apartment</p>
+                <strong className="title">Dongdemoun</strong>
+                <p className="desc">There are Brands and Clothes</p>
                 <div className={"options"}>
                     <div>
                         <img src="/img/icons/bed.svg" alt="" />

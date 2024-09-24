@@ -1,6 +1,6 @@
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TelegramIcon from "@mui/icons-material/Telegram";
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Box, Stack } from "@mui/material";
 
@@ -18,15 +18,15 @@ const Footer = () => {
                     </Box>
                     <Box component={"div"} className={"footer-box"}>
                         <span>nee live</span>
-                        <p>+82 10 4867 5455</p>
+                        <p>kimjeon@icloud.com</p>
                         <span>Support?</span>
                     </Box>
                     <Box component={"div"} className={"footer-box"}>
                         <p>follow us social media</p>
                         <div className="media-box">
-                            <FacebookOutlinedIcon />
-                            <TelegramIcon />
                             <InstagramIcon />
+                            <FacebookOutlinedIcon />
+                            <LinkedInIcon />
                             <TwitterIcon />
                         </div>
                     </Box>

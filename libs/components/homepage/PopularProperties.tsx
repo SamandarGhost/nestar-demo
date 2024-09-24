@@ -14,7 +14,7 @@ const PopularProperties = ({ initialInput, ...props }: any) => {
                 <Stack className={"info-box"}>
                     <Box className={"left"}>
                         <span>Popular Properties</span>
-                        <p>Popularity is based on likes</p>
+                        <p>Aliquam lacinia diam quis lacus euismod</p>
                     </Box>
                     <Box className={"right"}>
                         <div className="more-box">
