@@ -17,7 +17,7 @@ const PopularPropertyCard = () => {
                     <span>top</span>
                 </div>
 
-                <div className={"price"}>$520000</div>
+                <div className={"price"}>$880000</div>
             </Box>
             <Box className={"info"}>
                 <strong className="title">Run Will Building</strong>
@@ -25,15 +25,15 @@ const PopularPropertyCard = () => {
                 <div className={"options"}>
                     <div>
                         <img src="/img/icons/bed.svg" alt="" />
-                        <span>3 bed</span>
+                        <span>4 bed</span>
                     </div>
                     <div>
                         <img src="/img/icons/room.svg" alt="" />
-                        <span>7 rooms</span>
+                        <span>4 rooms</span>
                     </div>
                     <div>
                         <img src="/img/icons/expand.svg" alt="" />
-                        <span>250 m2</span>
+                        <span>600 m2</span>
                     </div>
                 </div>
 
@@ -44,11 +44,11 @@ const PopularPropertyCard = () => {
                         <IconButton color={"default"}>
                             <RemoveRedEyeIcon />
                         </IconButton>
-                        <Typography className="view-cnt">120</Typography>
+                        <Typography className="view-cnt">300</Typography>
                         <IconButton color={"default"}>
                             <FavoriteIcon style={{ color: "red" }} />
                         </IconButton>
-                        <Typography className="view-cnt">200</Typography>
+                        <Typography className="view-cnt">500</Typography>
                     </div>
                 </div>
             </Box>

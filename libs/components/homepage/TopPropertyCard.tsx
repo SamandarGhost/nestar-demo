@@ -20,7 +20,7 @@ const TopPropertyCard = () => {
                 <div className={"options"}>
                     <div>
                         <img src="/img/icons/bed.svg" alt="" />
-                        <span>3 bed</span>
+                        <span>5 bed</span>
                     </div>
                     <div>
                         <img src="/img/icons/room.svg" alt="" />
@@ -28,7 +28,7 @@ const TopPropertyCard = () => {
                     </div>
                     <div>
                         <img src="/img/icons/expand.svg" alt="" />
-                        <span>250 m2</span>
+                        <span>350 m2</span>
                     </div>
                 </div>
 
@@ -39,11 +39,11 @@ const TopPropertyCard = () => {
                         <IconButton color={"default"}>
                             <RemoveRedEyeIcon />
                         </IconButton>
-                        <Typography className="view-cnt">120</Typography>
+                        <Typography className="view-cnt">300</Typography>
                         <IconButton color={"default"}>
-                            <FavoriteIcon />
+                            <FavoriteIcon style={{ color: "red" }} />
                         </IconButton>
-                        <Typography className="view-cnt">200</Typography>
+                        <Typography className="view-cnt">400</Typography>
                     </div>
                 </div>
             </Box>
