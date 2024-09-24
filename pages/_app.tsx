@@ -4,6 +4,8 @@ import { CssBaseline } from "@mui/material";
 import { light } from "../scss/MaterialTheme";
 import { useState } from "react";
 
+
+// bu file ichida loyihaga aloqador global integratsiyalarni amalga oshiramiz
 export default function App({ Component, pageProps }: AppProps) {
   // @ts-ignore
   const [theme, setTheme] = useState(createTheme(light));

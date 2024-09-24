@@ -1,5 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
+
+// bu file ichida meta datalarni integratsiyasini amalga oshiramiz
 export default function Document() {
   return (
     <Html lang="en">
