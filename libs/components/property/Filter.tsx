@@ -1,14 +1,26 @@
-import { Button, FormControl, IconButton, InputLabel, MenuItem, OutlinedInput, Select, Stack, Tooltip, Typography } from "@mui/material";
-import { useState } from "react"
+import React, { useState } from "react"
+import {
+    Stack,
+    Typography,
+    Checkbox,
+    MenuItem,
+    Select,
+    FormControl,
+    IconButton,
+    InputLabel,
+    OutlinedInput,
+    Tooltip,
+    Button,
+} from "@mui/material";
 import RefreshIcon from '@mui/icons-material/Refresh';
-import { CheckBox } from "@mui/icons-material";
+import { Square } from "@mui/icons-material";
 
 
 const Filter = () => {
     const [searchText, setSearchText] = useState<string>('');
     const [showMore, setShowMore] = useState<boolean>(false);
     const [propertyPrice, setPropertyPrice] = useState({ start: 0, end: 250000 });
-    const [propertySquare, setPropertySquare] = useState<number>({ start: 0, end: 250000 });
+    const [propertySquare, setPropertySquare] = useState<number>({ square: 300, Square: 500 });
 
     return (
         <Stack className={'filter-main'}>
@@ -41,7 +53,7 @@ const Filter = () => {
                     {['SEOUL', 'BUSAN', 'DAEGU'].map((location: string) => {
                         return (
                             <Stack className={'input-box'} key={location}>
-                                <CheckBox
+                                <Checkbox
                                     id={location}
                                     className="property-checkbox"
                                     color="default"
@@ -61,13 +73,12 @@ const Filter = () => {
                 <Typography className={'title'}>Property Type</Typography>
                 {['APARTMENT', 'HOUSE', 'VILLA'].map((type: string) => (
                     <Stack className={'input-box'} key={type}>
-                        <CheckBox
-                            id={location}
+                        <Checkbox
+                            id={type}
                             className="property-checkbox"
                             color="default"
                             size="small"
-                            value={location}
-                            checked={type}
+                            value={type}
                         />
                         <label style={{ cursor: 'pointer' }}>
                             <Typography className={'property-type'}>{type}</Typography>
@@ -79,32 +90,32 @@ const Filter = () => {
                 <Typography className={'title'}>Rooms</Typography>
                 <Stack className={'button-group'}>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: '12px 0 0 12px',
                             border: '1px solid #b9b9b9'
                         }}>Any</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #b9b9b9'
                         }}>1</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #181A20'
                         }}>2</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #b9b9b9'
                         }}>3</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #181A20'
                         }}>4</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: '0 12px 12px 0',
                             border: '1px solid #b9b9b9'
                         }}>5+</Button>
@@ -114,32 +125,32 @@ const Filter = () => {
                 <Typography className={'title'}>Bedrooms</Typography>
                 <Stack className={'button-group'}>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: '12px 0 0 12px',
                             border: '1px solid #b9b9b9'
                         }}>Any</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #b9b9b9'
                         }}>1</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #181A20'
                         }}>2</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #b9b9b9'
                         }}>3</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: 0,
                             border: '1px solid #181A20'
                         }}>4</Button>
                     <Button
-                        sc={{
+                        sx={{
                             borderRadius: '0 12px 12px 0',
                             border: '1px solid #b9b9b9'
                         }}>5+</Button>
@@ -148,8 +159,8 @@ const Filter = () => {
             <Stack className={'find-your-home'} mb={'30px'}>
                 <Typography className={'title'}>options</Typography>
                 <Stack className={'input-box'}>
-                    <CheckBox
-                        id={location}
+                    <Checkbox
+                        id={'Barter'}
                         className="property-checkbox"
                         color="default"
                         size="small"
@@ -160,8 +171,8 @@ const Filter = () => {
                     </label>
                 </Stack>
                 <Stack className={'input-box'}>
-                    <CheckBox
-                        id={location}
+                    <Checkbox
+                        id={'Rent'}
                         className="property-checkbox"
                         color="default"
                         size="small"
