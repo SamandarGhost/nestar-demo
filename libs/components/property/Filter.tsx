@@ -14,13 +14,13 @@ import {
 } from "@mui/material";
 import RefreshIcon from '@mui/icons-material/Refresh';
 import { Square } from "@mui/icons-material";
+import { propertySquare } from "../confi";
 
 
 const Filter = () => {
     const [searchText, setSearchText] = useState<string>('');
     const [showMore, setShowMore] = useState<boolean>(false);
     const [propertyPrice, setPropertyPrice] = useState({ start: 0, end: 250000 });
-    const [propertySquare, setPropertySquare] = useState<number>({ square: 300, Square: 500 });
 
     return (
         <Stack className={'filter-main'}>
@@ -208,7 +208,7 @@ const Filter = () => {
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
                             value={500}
-                            label="Man"
+                            label="Max"
                         >
                             {propertySquare.map((square: number) => (
                                 <MenuItem value={square} key={square}>
