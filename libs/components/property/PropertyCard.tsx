@@ -44,11 +44,11 @@ const PropertyCard = () => {
                 <Stack className={'options'}>
                     <Stack className={'option'}>
                         <img src="/img/icons/bed.svg" alt="" />{' '}
-                        <Typography>4 beds</Typography>
+                        <Typography>4 bed</Typography>
                     </Stack>
                     <Stack className={'option'}>
                         <img src="/img/icons/room.svg" alt="" />{' '}
-                        <Typography>8 rooms</Typography>
+                        <Typography>8 room</Typography>
                     </Stack>
                     <Stack className={'option'}>
                         <img src="/img/icons/expand.svg" alt="" />{' '}
